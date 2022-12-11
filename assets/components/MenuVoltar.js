@@ -8,7 +8,7 @@ export default function Menu(props){
 
     return(
         <View style={css.menu}>
-            <TouchableOpacity style={css.button__home} onPress={()=>props.navigation.navigate("Login")}>
+            <TouchableOpacity style={css.button__voltar} onPress={()=>props.navigation.navigate(props.tela)}>
                 <Icon name={props.nomeicone} size={40} color="#FFF"></Icon>
             </TouchableOpacity >
             <Text style={css.menu__title}>{props.title}</Text>    

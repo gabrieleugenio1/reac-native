@@ -16,10 +16,17 @@ const css = StyleSheet.create({
       justifyContent: "center",
 
   },
-  button__home:{
+  button__logout:{
       textAlign:'left',
       marginLeft:10,
   },
+  button__voltar:{
+    marginLeft:10,
+  }, 
+  button__contato:{
+    textAlign:'right',
+    marginRight:10,
+},
 
   menu__title:{
       width: "80%",
@@ -29,6 +36,14 @@ const css = StyleSheet.create({
       textAlign:"center",
       marginRight:"auto",
   },
+  menu__title_home:{
+    width: "80%",
+    fontWeight: "bold",
+    fontSize:25,
+    color: "#fff",
+    textAlign:"center",
+    marginRight:"auto",
+},
     botoes:{
       justifyContent:"flex-end",
       alignItems:"center",
@@ -36,12 +51,20 @@ const css = StyleSheet.create({
       marginBottom:40,
       paddingHorizontal:40,
     },
-    login:{
+    login_cadastro_contato:{
       flex:1,
       justifyContent:"flex-end",
       width:"80%",   
       alignSelf:"center",
     },
+    login__msg:(text="none") => ({
+      fontWeight:"bold",
+      fontSize:22,
+      color:"#FF0000",
+      marginTop:5,
+      marginBottom:15,
+      display: text,
+  }),
     inputLogin:{   
       justifyContent:"flex-end", 
     },  
